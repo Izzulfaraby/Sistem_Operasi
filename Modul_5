@@ -1,0 +1,18 @@
+• ip a
+   untuk lihat alamat IP
+• ping 8.8.8.8
+   untuk memastikan sistem terhubung ke internet dan dapat menjangkau jaringan luar.
+• sudo apt install openssh-server
+   untuk menginstal openssh server
+• sudo systemctl enable ssh 
+   Mengaktifkan openssh server
+• sudo systemctl start ssh
+   Menjalanka layanan openssh server
+• ssh username@ip_vm dari host
+   untuk login ke user lain
+• sudo ufw status
+   untuk menampilkan status firewall
+• sudo ufw deny 22
+   untuk memeblokir SSH
+• sudo ufw allow 22
+   untuk membuka kembal SSH
