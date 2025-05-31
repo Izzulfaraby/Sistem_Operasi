@@ -1,0 +1,26 @@
+  sudo apt update
+  sudo apt install docker -ce
+  sudo systemctl start docker
+  sudo systemctl enable docker
+  sudo usermod -aG docker Pall
+  newgrp docker
+  sudo systemctl status docker
+  mkdir Docker
+  cd Docker
+  xhost +local:docker
+  Xhost
+  docker run -it
+  --name venv-py-gui 
+  -e DISPLAY=$DISPLAY
+  -v /tmp/.X11-unix:/tmp/.X11-unix
+  Python:3.12 bash
+  apt update && apt install -y pyhton3-tk 
+  pip install numpy matplotlib
+  mkdir virtualenv
+  cd virtualenv
+  python3 -m venv env
+  source env/bin/activate
+  pip install numpy matplotlib
+  xhost +local:virtualenv
+  xhost
+  deactivate
